@@ -1,0 +1,62 @@
+# ── KiCad ──────────────────────────────────────────────────────────────────────
+
+# Automatic backups
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.bak
+*.kicad_prl           # per-project local settings (window state, layer vis, etc.)
+
+# Legacy library cache (KiCad 5 and earlier)
+*-cache.lib
+*-cache.dcm
+*-rescue.lib
+*-rescue.dcm
+rescue-backup/
+
+# Footprint library table (auto-generated from environment)
+fp-lib-table
+sym-lib-table
+
+# Autosave
+_autosave-*
+*.000
+*.001
+
+# Fabrication outputs — track intentionally if you want Gerbers in the repo,
+# otherwise exclude and regenerate from the .kicad_pcb source of truth
+# pcb/gerbers/
+
+# KiCad 6+ project-local files
+*.kicad_pro.bak
+fp-info-cache
+
+# 3D model cache
+*.g.bak
+
+# ── LTSpice ────────────────────────────────────────────────────────────────────
+*.net
+*.log
+*.op.raw
+*.raw
+*.fft
+*.txt                 # simulation data exports — add individual tracked files explicitly
+
+# ── macOS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Windows ────────────────────────────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Editor temp files ──────────────────────────────────────────────────────────
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
